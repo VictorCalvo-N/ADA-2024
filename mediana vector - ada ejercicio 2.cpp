@@ -33,17 +33,17 @@ int main() {
     // Ordena el vector para encontrar la mediana
     sort(nums.begin(), nums.end());
     for (int i = 0; i < n; ++i) {
-        cout << nums[i]<<" ";
+        cout << nums[i] << " ";
     }
 
     int median = findMedian(nums);
-    if (median%2) {
+    if (median % 2) {
         cout << "La mediana más cercana del vector es: " << median << endl;
     }
     else {
         cout << "La mediana del vector es: " << median << endl;
     }
-    
+
 
     return 0;
 }
